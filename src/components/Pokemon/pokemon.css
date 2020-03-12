@@ -1,0 +1,18 @@
+.pokemon {
+
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border: black solid 1px;
+    border-radius: 15px;
+    margin: 5vh auto;
+    padding: 20px;
+}
+
+.btn {
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+}
