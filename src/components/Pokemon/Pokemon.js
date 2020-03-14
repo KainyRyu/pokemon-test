@@ -3,16 +3,15 @@ import './pokemon.css';
 
 export default function Pokemon() {
     const [isLoading, setIsLoading] = useState(false);
-    // const [pokemon, setPokemon] = useState('');
     const [name, setName] = useState('');
     const [image, setImage] = useState('');
 
     function generator() {
-        setIsLoading(!isLoading)
+        setIsLoading(!isLoading);
     }
 
     function randomNum() {
-        return Math.floor(Math.random() * 50)
+        return Math.floor(Math.random() * 50);
     }
 
     useEffect(() => {
