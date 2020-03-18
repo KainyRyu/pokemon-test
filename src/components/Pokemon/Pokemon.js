@@ -22,23 +22,19 @@ export default function Pokemon() {
             setName(data.name);
             setImage(data.sprites.front_default);
             setIsLoading(false);
-            console.log(data.version_group)
-            const res = await fetch(data.version_group.url);
-            const level = await res.json();
-            console.log(level)
         }
     },[isLoading]);
 
     return (
         <div className='pokemon'>  
+            <button className="btn" onClick={generator}>Generator!</button>
             <div className='card'>
-                <button className="btn" onClick={generator}>Generator!</button>
                 {
                     isLoading ? 
                         <h1>Loading..</h1> : 
                         <>
-                            <h1>{name}</h1>
                             <img src={image} alt={name} />
+                            <h1>{name}</h1>
                         </>
                 }
             </div>
