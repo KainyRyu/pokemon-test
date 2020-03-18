@@ -11,7 +11,7 @@ export default function Pokemon() {
     }
 
     function randomNum() {
-        return Math.floor(Math.random() * 50);
+        return Math.floor(Math.random() * 100);
     }
 
     useEffect(() => {
@@ -22,6 +22,10 @@ export default function Pokemon() {
             setName(data.name);
             setImage(data.sprites.front_default);
             setIsLoading(false);
+            console.log(data.version_group)
+            const res = await fetch(data.version_group.url);
+            const level = await res.json();
+            console.log(level)
         }
     },[isLoading]);
 

@@ -22,7 +22,11 @@ export default function Pokemon2() {
 
     return (
         <div className='card'>
-            <button onClick={() => setIsLoading(!isLoading) }>Click!</button>
+            <button
+                className="btn" 
+                onClick={() => setIsLoading(!isLoading) }>
+                    Click!
+            </button>
             {isLoading ? 
                 <h1>Loading...</h1> :
                 <div>

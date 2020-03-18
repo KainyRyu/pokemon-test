@@ -6,8 +6,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {/* <Pokemon /> */}
-      <Pokemon2 />
+      <Pokemon />
+      {/* <Pokemon2 /> */}
     </div>
   );
 }
